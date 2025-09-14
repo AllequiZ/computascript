@@ -36,11 +36,13 @@
 
   <script type="module">
 
-    import * as THREE from 'three';
-    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
-    import { TubePainter } from './public/jsm/misc/TubePainter.js';
-    import { XRButton } from 'three/addons/webxr/XRButton.js';
-    import { GUI } from 'lil-gui';
+import * as THREE from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { TubePainter } from './public/jsm/misc/TubePainter.js';
+import { XRButton } from 'three/examples/jsm/webxr/XRButton.js';
+import { GUI } from 'lil-gui';
+
+
     let camera, scene, renderer;
     let controller1, controller2;
     let currentColor = new THREE.Color(0xff0000);
