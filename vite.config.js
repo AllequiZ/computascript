@@ -3,7 +3,7 @@ import basicSsl from '@vitejs/plugin-basic-ssl';
 
 export default defineConfig({
 
-  base: '/.',
+  base: process.env.NODE_ENV === 'production' ? '/computascript/' : '',
 
   plugins: [
     basicSsl()
